@@ -2,10 +2,15 @@ class Chinela:
     def __init__(self):
         self.tam = 0
     
-    def settam(self,valor: int):
-        if tam >= 20 and tam tam <= 50 and tam % 2 == 0:
-            self.tam += 2
+    def gettam(self):
+        return self.tam 
 
+    def settam(self,valor: int):
+        if valor >= 20 and valor <= 50 and valor % 2 == 0:
+            self.tam = valor
+        elif valor % 2 != 0 or valor < 20:
+            print("fail: você deve estar digitando um numero impar ou menor que 20")
+         
 chinela = Chinela()
 
 while chinela.gettam() == 0:
@@ -14,4 +19,4 @@ while chinela.gettam() == 0:
 
     chinela.settam(tam)
 
-print("parabens voce comprou umma chinela tamanho:", chinela.gettam())    
+print("parabens voce comprou uma chinela tamanho:", chinela.gettam())    
