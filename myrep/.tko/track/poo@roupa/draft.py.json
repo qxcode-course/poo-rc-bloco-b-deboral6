@@ -1,0 +1,9 @@
+{
+    "patches": [
+        {
+            "label": "2025-10-17_20-00-51",
+            "content": "class Roupa:\n    def __init__(self):\n        self.__size: str = \"\" \n\n    def getsize(self):\n        return self.__size\n    \n    def setsize(self, tam: str):\n        tam = tam.strip().upper()\n        tam_validos = [\"PP\", \"P\", \"M\", \"G\", \"GG\", \"XG\"]\n        \n        if tam in tam_validos:\n            self.__size = tam\n        else:\n            print(\"fail: valor inv\u00e1lido tente: \" + \" \".join(tam_validos))\n\n\ndef main():\n    roupa = Roupa()\n\n    while True:\n        try:\n            rp = input().strip()\n        except EOFError:\n            break\n\n        if rp == \"$end\":\n            break\n\n        elif rp == \"$show\":\n            tam = roupa.getsize()\n            print(f\"size: ({tam})\")\n\n        elif rp.startswith(\"$size\"):\n            partes = rp.split()\n            if len(partes) == 2:\n                valor = partes[1]\n                roupa.setsize(valor)\n            else:\n                print(\"fail: uso correto \u00e9 $size <TAMANHO>\")\n\n        else:\n            print(\"fail: comando inv\u00e1lido\")\n\nif __name__ == \"__main__\":\n    main()\n\n\n\n\n\n\n\n      \n\n\n\n\n\n\n        \n        \n\n",
+            "lines": "63"
+        }
+    ]
+}
