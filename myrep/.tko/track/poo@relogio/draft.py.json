@@ -1,0 +1,14 @@
+{
+    "patches": [
+        {
+            "label": "2025-10-21_14-01-59",
+            "content": "@@ -1023,76 +1023,8 @@\n eak%0A\n-        elif args %5B0%5D == %22show%22:%0A            print(watch)%0A        %0A%0A\n %0A   \n",
+            "lines": "49"
+        },
+        {
+            "label": "2025-10-21_14-17-55",
+            "content": "class Watch:\n    def __init__(self):\n        self.hora = 0\n        self.minuto = 0\n        self.segundo = 0\n\n    def sethora(self, valor: int):\n        if valor >= 0 and valor <= 23:\n            self.hora = valor\n        elif valor > 23:\n            self.hora = 0\n\n    def setminuto(self, valor: int):\n        if valor >= 0 and valor <= 59:\n            self.minuto = valor\n        elif valor == 60:\n            self.sethora(1)\n\n    def setsegundo(self, valor: int):\n        if valor >= 0 and valor <= 59:\n            self.segundo = valor\n        elif valor == 60:\n            self.setminuto(1)\n\n    def gethora(self):\n        return self.hora\n    \n    def getminuto(self):\n        return self.minuto\n    \n    def getsegundo(self):\n        return self.segundo\n    \n    def __str__(self) -> str:\n        return f\"{self.hora:02d}: {self.minuto:02d}: {self.segundo:02d}\"\n        \ndef main():\n    watch = Watch()\n    while True:\n        line = input()\n        args = line.split(\" \")\n        if args [0] == \"end\":\n            break\n        elif args [0] == \"show\":\n            print(watch)\n        \n\n\n    \n\n\n\n    ",
+            "lines": "53"
+        }
+    ]
+}
