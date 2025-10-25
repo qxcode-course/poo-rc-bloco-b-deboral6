@@ -28,3 +28,4 @@
 2025-10-23 18:38:04, EXEC, v:1, k:poo@relogio, mode:FULL, rate:84, size:78
 2025-10-23 18:42:34, EXEC, v:1, k:poo@relogio, mode:FULL, rate:100, size:78
 2025-10-23 18:42:44, MOVE, v:1, k:poo@relogio, mode:BACK
+2025-10-23 18:46:34, MOVE, v:1, k:poo@notebook, mode:DOWN

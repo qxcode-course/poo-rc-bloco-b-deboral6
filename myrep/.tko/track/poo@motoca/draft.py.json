@@ -1,0 +1,104 @@
+{
+    "patches": [
+        {
+            "label": "2025-10-25_19-00-46",
+            "content": "@@ -1596,16 +1596,17 @@\n f%22power:\n+ \n %7Bself.po\n",
+            "lines": "95"
+        },
+        {
+            "label": "2025-10-25_19-01-29",
+            "content": "@@ -1618,16 +1618,17 @@\n %7D, time:\n+ \n %7Bself.ti\n@@ -1639,16 +1639,17 @@\n  person:\n+ \n (%7Bpessoa\n",
+            "lines": "95"
+        },
+        {
+            "label": "2025-10-25_19-01-41",
+            "content": "@@ -607,54 +607,35 @@\n     \n-self.pessoa = pessoa %0A            return True%0A\n+return pessoa_removida%0A    \n %0A   \n",
+            "lines": "95"
+        },
+        {
+            "label": "2025-10-25_19-06-26",
+            "content": "@@ -2006,18 +2006,20 @@\n         \n-el\n+    \n if pesso\n@@ -2019,17 +2019,16 @@\n f pessoa\n- \n != None:\n@@ -2036,24 +2036,28 @@\n             \n+   \n+ \n print(pessoa\n@@ -2058,24 +2058,16 @@\n pessoa)%0A\n-       %0A\n         \n@@ -2145,39 +2145,8 @@\n %5B1%5D)\n-  # idade primeiro, nome depois\n %0A   \n@@ -2177,17 +2177,16 @@\n pessoa)%0A\n-%0A\n         \n",
+            "lines": "96"
+        },
+        {
+            "label": "2025-10-25_19-08-04",
+            "content": "@@ -2006,20 +2006,18 @@\n         \n-    \n+el\n if pesso\n@@ -2017,16 +2017,17 @@\n f pessoa\n+ \n != None:\n@@ -2035,28 +2035,24 @@\n             \n-   \n- \n print(pessoa\n@@ -2045,32 +2045,40 @@\n   print(pessoa)%0A\n+       %0A\n         elif arg\n@@ -2144,16 +2144,47 @@\n args%5B1%5D)\n+  # idade primeiro, nome depois\n %0A       \n@@ -2207,24 +2207,25 @@\n rir(pessoa)%0A\n+%0A\n         elif\n",
+            "lines": "98"
+        },
+        {
+            "label": "2025-10-25_19-08-42",
+            "content": "@@ -558,32 +558,57 @@\n sy motorcycle%22)%0A\n+            return False%0A\n             self\n",
+            "lines": "96"
+        },
+        {
+            "label": "2025-10-25_19-14-12",
+            "content": "@@ -162,17 +162,16 @@\n .__name%0A\n-%0A\n     def \n@@ -213,24 +213,28 @@\n  self.__age%0A\n+    \n %0A    def __s\n@@ -262,16 +262,21 @@\n eturn f%22\n+nome:\n %7Bself.__\n@@ -280,17 +280,25 @@\n .__name%7D\n-:\n+, idade: \n %7Bself.__\n@@ -303,17 +303,20 @@\n __age%7D%22%0A\n-%0A\n+    \n %0Aclass M\n@@ -574,29 +574,8 @@\n     \n-        return False%0A\n     \n@@ -599,18 +599,21 @@\n  pessoa \n- \n %0A\n+    \n         \n@@ -683,33 +683,32 @@\n one:%0A           \n- \n print(%22fail: emp\n@@ -696,36 +696,35 @@\n    print(%22fail: \n-empt\n+bus\n y motorcycle%22)%0A \n@@ -714,33 +714,32 @@\n sy motorcycle%22)%0A\n- \n            retur\n@@ -841,16 +841,24 @@\n emovida%0A\n+        \n %0A    def\n@@ -906,24 +906,28 @@\n ime += time%0A\n+    \n %0A    def dri\n@@ -939,32 +939,119 @@\n lf, time: int):%0A\n+        if self.time %3C=0:%0A            print(%22fail: buy time first%22)%0A            return%0A\n         if self.\n@@ -1234,96 +1234,8 @@\n urn%0A\n-        if self.time %3C= 0:%0A            print(%22fail: buy time first%22)%0A            return%0A\n     \n@@ -1259,16 +1259,17 @@\n f.time:%0A\n+ \n         \n@@ -1328,16 +1328,17 @@\n nutes%22)%0A\n+ \n         \n@@ -1399,16 +1399,20 @@\n -= time%0A\n+    \n %0A    def\n@@ -1473,16 +1473,20 @@\n ) + %22m%22%0A\n+    \n %0A    def\n@@ -1648,17 +1648,20 @@\n _str%7D)%22%0A\n-%0A\n+    \n %0Adef mai\n@@ -1990,31 +1990,26 @@\n    if pessoa\n- is not\n+!=\n  None:%0A     \n@@ -2381,20 +2381,18 @@\n  args%5B0%5D\n- \n ==\n- \n %22show%22:%0A\n@@ -2425,8 +2425,47 @@\n %0Amain()%0A\n+    %0A        %0A    %0A%0A%0A%0A        %0A        \n",
+            "lines": "95"
+        },
+        {
+            "label": "2025-10-25_19-15-01",
+            "content": "@@ -1074,33 +1074,32 @@\n 10:%0A            \n- \n print(%22fail: too\n@@ -1110,25 +1110,24 @@\n  to drive%22)%0A\n- \n             \n@@ -1221,17 +1221,16 @@\n  return%0A\n-%0A\n         \n",
+            "lines": "91"
+        },
+        {
+            "label": "2025-10-25_19-18-05",
+            "content": "@@ -1074,32 +1074,33 @@\n 10:%0A            \n+ \n print(%22fail: too\n@@ -1111,24 +1111,25 @@\n  to drive%22)%0A\n+ \n             \n@@ -1215,32 +1215,33 @@\n          return%0A\n+%0A\n         if time \n",
+            "lines": "92"
+        },
+        {
+            "label": "2025-10-25_19-20-45",
+            "content": "@@ -1389,17 +1389,16 @@\n = time%0A%0A\n-%0A\n     def \n",
+            "lines": "91"
+        },
+        {
+            "label": "2025-10-25_19-22-00",
+            "content": "@@ -990,38 +990,40 @@\n rint(%22fail: \n-buy time first\n+empty motorcycle\n %22)%0A         \n",
+            "lines": "92"
+        },
+        {
+            "label": "2025-10-25_19-22-44",
+            "content": "@@ -1183,32 +1183,30 @@\n (%22fail: \n-empty motorcycle\n+buy time first\n %22)%0A     \n",
+            "lines": "92"
+        },
+        {
+            "label": "2025-10-25_19-23-37",
+            "content": "@@ -1009,16 +1009,17 @@\n e first%22\n+)\n %0A       \n@@ -1179,38 +1179,40 @@\n rint(%22fail: \n-buy time first\n+empty motorcycle\n %22)%0A         \n",
+            "lines": "92"
+        },
+        {
+            "label": "2025-10-25_19-23-58",
+            "content": "@@ -1001,33 +1001,32 @@\n  buy time first%22\n-)\n %0A            ret\n",
+            "lines": "92"
+        },
+        {
+            "label": "2025-10-25_19-24-06",
+            "content": "@@ -994,32 +994,30 @@\n (%22fail: \n-empty motorcycle\n+buy time first\n %22)%0A     \n",
+            "lines": "92"
+        },
+        {
+            "label": "2025-10-25_19-24-37",
+            "content": "@@ -1185,32 +1185,30 @@\n (%22fail: \n-empty motorcycle\n+buy time first\n %22)%0A     \n",
+            "lines": "92"
+        },
+        {
+            "label": "2025-10-25_19-25-09",
+            "content": "@@ -957,17 +957,22 @@\n elf.\n-time %3C= 0\n+pessoa is None\n :%0A  \n@@ -998,22 +998,24 @@\n il: \n-buy time first\n+empty motorcycle\n %22)%0A \n@@ -1058,18 +1058,22 @@\n ssoa\n- is None()\n+.getage() %3E 10\n :%0A  \n@@ -1091,39 +1091,39 @@\n rint(%22fail: \n-empty motorcycl\n+too old to driv\n e%22)%0A        \n@@ -1153,27 +1153,16 @@\n elf.\n-pessoa.getAge() %3E 1\n+time %3C= \n 0:%0A \n@@ -1181,39 +1181,39 @@\n rint(%22fail: \n-too old to driv\n+empty motorcycl\n e%22)%0A        \n",
+            "lines": "92"
+        },
+        {
+            "label": "2025-10-25_19-32-27",
+            "content": "@@ -1047,32 +1047,34 @@\n f.pessoa is None\n+()\n :%0A            pr\n",
+            "lines": "92"
+        },
+        {
+            "label": "2025-10-25_19-33-15",
+            "content": "@@ -1146,17 +1146,17 @@\n ssoa.get\n-a\n+A\n ge() %3E 1\n",
+            "lines": "92"
+        },
+        {
+            "label": "2025-10-25_19-33-36",
+            "content": "class Pessoa:\n    def __init__(self, age: int, name: str):\n        self.__name = name\n        self.__age = age\n\n    def getname(self) -> str:\n        return self.__name\n\n    def getage(self) -> int:\n        return self.__age\n\n    def __str__(self):\n        return f\"{self.__name}:{self.__age}\"\n\n\nclass Motoca:\n    def __init__(self, potencia: int = 1):\n        self.potencia = potencia\n        self.time = 0\n        self.pessoa = None\n\n    def inserir(self, pessoa: Pessoa):\n        if self.pessoa is not None:\n            print(\"fail: busy motorcycle\")\n            return False\n        self.pessoa = pessoa  \n        return True\n\n    def remover(self):\n        if self.pessoa is None:\n            print(\"fail: empty motorcycle\")\n            return None\n        pessoa_removida = self.pessoa\n        self.pessoa = None\n        return pessoa_removida\n\n    def buytime(self, time: int):\n        self.time += time\n\n    def drive(self, time: int):\n        if self.time <= 0:\n            print(\"fail: buy time first\")\n            return\n        if self.pessoa is None:\n            print(\"fail: empty motorcycle\")\n            return\n        if self.pessoa.getage() > 10:\n            print(\"fail: too old to drive\")\n            return\n        if time > self.time:\n            print(f\"fail: time finished after {self.time} minutes\")\n            self.time = 0\n        else:\n            self.time -= time\n\n\n    def honk(self):\n        return \"P\" + (\"e\" * self.potencia) + \"m\"\n\n    def __str__(self):\n        pessoa_str = str(self.pessoa) if self.pessoa else \"empty\"\n        return f\"power:{self.potencia}, time:{self.time}, person:({pessoa_str})\"\n\n\ndef main():\n    motoca = Motoca()\n    while True:\n        line = input()\n        print(f\"${line}\")\n        args = line.split()\n\n        if args[0] == \"end\":\n            break\n        elif args[0] == \"init\":\n            motoca = Motoca(int(args[1]))\n        elif args[0] == \"leave\":\n            pessoa = motoca.remover()\n            if pessoa is not None:\n                print(pessoa)\n        elif args[0] == \"enter\":\n            pessoa = Pessoa(int(args[2]), args[1])\n            motoca.inserir(pessoa)\n        elif args[0] == \"buy\":\n            motoca.buytime(int(args[1]))\n        elif args[0] == \"drive\":\n            motoca.drive(int(args[1]))\n        elif args[0] == \"honk\":\n            print(motoca.honk())\n        elif args[0] == \"show\":\n            print(motoca)\n\nmain()\n",
+            "lines": "92"
+        }
+    ]
+}
