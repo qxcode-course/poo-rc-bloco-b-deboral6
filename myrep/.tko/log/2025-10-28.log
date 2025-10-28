@@ -29,3 +29,5 @@
 2025-10-28 13:46:26, MOVE, v:1, k:poo@motouber, mode:PICK
 2025-10-28 13:46:27, EXEC, v:1, k:poo@motouber, mode:FULL, rate:100, size:96
 2025-10-28 13:46:31, MOVE, v:1, k:poo@motouber, mode:BACK
+2025-10-28 14:43:16, MOVE, v:1, k:poo@notebook, mode:PICK
+2025-10-28 14:43:17, EXEC, v:1, k:poo@notebook, mode:LOCK, rate:100, size:64

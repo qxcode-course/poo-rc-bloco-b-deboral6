@@ -1,0 +1,9 @@
+{
+    "patches": [
+        {
+            "label": "2025-10-28_14-43-17",
+            "content": "class Notebook:\n    def __init__(self):\n        self._ligado: bool = False\n        self._bateria: Bateria\n        \n    def ligar(self):\n        if not self._ligado:\n            if self._bateria and self._bateria.getCarga() > 0:\n               self._ligado  = True\n               print(\"notebook ligado\")\n        \n        else:\n            print(\"o notebook ja esta ligado\")\n\n    def desligar(self):\n        if self._ligado:\n            self._ligado = False\n            print(\"notebook desligado\")\n        else: \n            print(\"o notebook ja esta desligado\")\n\n    def mostrar(self):\n        if self._ligado:\n            status = \"ligado\"\n        else:\n            status = \"desligado\"\n        print(f\"Status: {status}\")\n\n    def usar(self, valor: int):\n        if self._ligado:\n            self._bateria.setGastarCarga(valor)\n            if self._bateria.getCarga() > 0:\n                self._bateria.setCarga(0)\n                self.desligar()\n\n            print(f\"usando por {valor} minutos\")\n        else:\n            print(\"erro: ligue o notebook primeiro\")\n\nclass Bateria:\n    def __init__(self, capacidade: int):\n        self._capacidade: int = capacidade\n        self._carga: int = capacidade\n\n    def getCarga(self) -> int:\n        return self._carga\n    def setCarga(self, valor: int):\n        self._carga = valor\n    \n    def setGastarCarga(self, valor:int):\n        self._carga -= valor\n\n    def carrregar(self, capacidade: int, carga: int):\n        if carga > capacidade:\n            self._carga = capacidade\n        else:\n            self._carga = carga\n        \n\n\n\n\n       \n      ",
+            "lines": "64"
+        }
+    ]
+}
