@@ -1,7 +1,7 @@
 class Pessoa:
-    def __init__(self, nome, dinheiro):
-        self._nome = nome
-        self._dinheiro = dinheiro
+    def __init__(self, nome: str, dinheiro: int):
+        self._nome: str = nome
+        self._dinheiro: int = dinheiro
     
     def __str__(self):
         return f"{self._nome}:{self._dinheiro}"
@@ -11,11 +11,11 @@ class Pessoa:
     
     def get_dinheiro(self):
         return self._dinheiro
-    
-    def adicionar_dinheiro(self, valor):
+        
+    def adicionar_dinheiro(self, valor: int):
         self._dinheiro += valor
     
-    def gastar_dinheiro(self, valor):
+    def gastar_dinheiro(self, valor: int):
         if valor > self._dinheiro:
             gasto = self._dinheiro
             self._dinheiro = 0
@@ -27,17 +27,17 @@ class Pessoa:
 
 class Moto:
     def __init__(self):
-        self._custo = 0
-        self._motorista = None
-        self._passageiro = None
+        self._custo: int = 0
+        self._motorista: Pessoa | None = None
+        self._passageiro: Pessoa | None = None
     
-    def setDriver(self, nome, dinheiro):
+    def setDriver(self, nome: str, dinheiro: int):
         self._motorista = Pessoa(nome, dinheiro)
     
-    def setPass(self, nome, dinheiro):
+    def setPass(self, nome: str, dinheiro: int):
         self._passageiro = Pessoa(nome, dinheiro)
     
-    def drive(self, km):
+    def drive(self, km: int):
         if self._passageiro is None:
             print("fail: No passenger on the ride")
             return
@@ -53,7 +53,7 @@ class Moto:
         custo = self._custo
 
         pago, completo = passageiro.gastar_dinheiro(custo)
-        motorista.adicionar_dinheiro(pago)
+        motorista.adicionar_dinheiro(self._custo)
 
         if not completo:
             print("fail: Passenger does not have enough money")
